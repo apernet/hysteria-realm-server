@@ -1,0 +1,5 @@
+.git
+.github
+*_test.go
+README.md
+hysteria-realm-server
