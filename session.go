@@ -14,7 +14,10 @@ const (
 	defaultRealmNamePattern = `^[A-Za-z0-9][A-Za-z0-9_-]{0,63}$`
 )
 
-const maxPendingAttempts = 16 // matches cap(events)
+const (
+	eventsBufferSize   = 16
+	maxPendingAttempts = eventsBufferSize
+)
 
 type session struct {
 	id        string

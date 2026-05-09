@@ -16,6 +16,18 @@ const (
 	obfsHexLength  = 64 // 32 bytes
 )
 
+const (
+	errBadRequest      = "bad_request"
+	errInvalidToken    = "invalid_token"
+	errRealmTaken      = "realm_taken"
+	errRealmLimit      = "realm_limit_reached"
+	errIPLimit         = "ip_limit_reached"
+	errRealmNotFound   = "realm_not_found"
+	errAttemptNotFound = "attempt_not_found"
+	errRateLimited     = "rate_limited"
+	errNotFound        = "not_found"
+)
+
 func writeErr(w http.ResponseWriter, status int, code, msg string) {
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(status)
