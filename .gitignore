@@ -118,3 +118,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,linux,macos,visualstudiocode,go
+
+# Built server binary
+/hysteria-realm-server
